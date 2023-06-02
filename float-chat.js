@@ -16,7 +16,7 @@ const colors = {
 const styles = `
 
   #chat-container {
-
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 
   /* ............ Chat Bubble .......... */
@@ -43,8 +43,8 @@ const styles = `
     width: 30px;
     height: 30px;
     position: relative;
-    top: 9px;
-    left: 9px;
+    top: 10px;
+    left: 10px;
   }
 
 
@@ -81,13 +81,13 @@ const styles = `
   /* ............ Chat Surface Header .......... */
 
   #chat-surface-header {
-    height: 70px;
+    height: 50px;
     padding: 10px 15px;
     background: ${colors.PRIMARY};
     border-radius: 10px 10px 0 0;
   }
 
-  #chat-surface-header h5 {
+  #chat-surface-header h3 {
     color: white;
     margin: 0;
   }
@@ -182,19 +182,21 @@ const styles = `
     line-height: 18px;
     border: none;
     color: #333333;
-    width: calc(100% - 20px);
+    width: calc(100% - 32px);
     padding: 7px;
     background: #f7f7f7;
     outline: none;
     resize: none;
     vertical-align: middle;
-    max-height: 32px;
+    max-height: 17px;
     overflow: hidden;
   }
 
   #chat-surface-footer img {
     width: 18px;
     height: 18px;
+    position: relative;
+    top: 5px;
   }
 
   #brand-text {
@@ -331,7 +333,7 @@ const chatSurfaceHeader = () => {
   var chatHeader = document.createElement("div");
   chatHeader.setAttribute("id", "chat-surface-header");
 
-  var title = document.createElement("h5");
+  var title = document.createElement("h3");
   title.innerText = CHAT_TITLE;
 
   var subtitle = document.createElement("p");
