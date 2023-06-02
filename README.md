@@ -27,7 +27,7 @@ Click open _index.html_
 
 ## Integration
 
-Place the below line just before the end of your <body> tag
+Place the below line just before the end of your _<body>_ tag
 
 ```bash
   <script src="./float-chat.js"></script>
