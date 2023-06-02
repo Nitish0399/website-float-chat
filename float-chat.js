@@ -439,7 +439,7 @@ const toggleChatBubble = (action) => {
     chatSurfaceElement.classList.add("chat-surface-open");
 
     if(!isStartMsgSent) {
-      setTimeout(() => readMessage("Hi, I am a chat"), 500);
+      setTimeout(() => readMessage("Hi, How are you?"), 500);
       isStartMsgSent = true;
     }
 
